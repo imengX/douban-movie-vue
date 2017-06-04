@@ -1,7 +1,7 @@
-<template lang="html">
+<template>
   <div class="star" :class="starType">
     <span v-for="itemClass in itemClasses" :class="itemClass" class="star-item"></span>
-    <span class="score">{{ this.score }}</span>
+    <span>{{score}}</span>
   </div>
 </template>
 
@@ -115,11 +115,6 @@ export default {
         @include bg-image(star48_off);
       }
     }
-  }
-  .score {
-    font-size: .72rem;
-    color: #aaa;
-    line-height: 0.94rem;
   }
 }
 </style>

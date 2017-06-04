@@ -1,5 +1,5 @@
 <template>
-  <router-link :to="`/moviedetail/${detail.id}`">
+  <router-link :to="`/subject/${detail.id}`">
     <div class="item-poster" v-lazy:background-image="detail.images.large"></div>
     <span class="item-title">{{ detail.title }}</span>
     <div class="item-rating">
@@ -48,12 +48,9 @@ export default {
 	text-overflow: ellipsis;
 	line-height: .94rem;
   max-width: 100%;
-	overflow: hidden;
 	text-overflow: ellipsis;
-	white-space: nowrap;
 	word-wrap: normal;
   font-size: 13px;
-  line-height: 18px;
   font-weight: normal;
   padding: 5px 0 0;
   color: #494949;
@@ -65,5 +62,10 @@ export default {
 	line-height: .94rem;
 	margin-top: .2rem;
 	font-size: .72rem;
+  text-align: center;
+}
+
+.rating-stars {
+  font-size: 12px;
 }
 </style>

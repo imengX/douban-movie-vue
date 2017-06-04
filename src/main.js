@@ -4,11 +4,14 @@ import Vue from 'vue'
 import App from './App'
 import VueLazyload from 'vue-lazyload'
 import router from './router'
+import iView from 'iview'
 
+import 'iview/dist/styles/iview.css'
 import './common/css/base.css'
 
 Vue.use(VueLazyload)
 Vue.use(router)
+Vue.use(iView)
 
 Vue.config.productionTip = false
 

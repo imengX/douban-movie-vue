@@ -81,6 +81,5 @@ export default {
 
 .nav-primary nav li {
 	font-size: 15px;
-	margin-right: 19px
 }
 </style>

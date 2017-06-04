@@ -27,3 +27,12 @@ export const top250 = (count, start) => {
     })
   })
 }
+
+// 电影条目信息
+export const subject = (id) => {
+  return new Promise((resolve, reject) => {
+    axios.get(`/v2/movie/subject/${id}`).then(response => {
+      resolve(response.data)
+    })
+  })
+}

@@ -21,7 +21,7 @@ export default new Router({
       component: more
     },
     {
-      path: '/moviedetail/:id',
+      path: '/subject/:id',
       component: movieDetail
     }
   ]
