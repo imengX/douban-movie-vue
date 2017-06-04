@@ -44,7 +44,7 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style lang="scss" scoped>
 .movie-detail {
   padding-top: 47px;
   max-width: 650px;

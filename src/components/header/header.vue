@@ -24,62 +24,44 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .nav {
 	position: fixed;
 	left: 0;
 	right: 0;
 	top: 0;
 	z-index: 9999;
-	background: #fff
-}
-
-.nav li,.nav ul {
-	margin: 0;
-	padding: 0;
-	list-style: none
-}
-
-.nav a {
-	text-decoration: none
-}
-
-.nav-primary {
-	border-bottom: 1px solid #f3f3f3;
-	-webkit-box-pack: justify;
-	justify-content: space-between;
-	-webkit-box-align: center;
-	align-items: center;
-	padding: 0 18px;
 	background: #fff;
-	height: 47px;
-	box-sizing: border-box;
-	display: -webkit-box;
-	display: flex
-}
-
-.nav-primary>* {
-	white-space: nowrap
-}
-
-.nav-primary h1 {
-	margin: 0;
-	padding: 0;
-	color: #00b600;
-	width: 46px;
-	display: inline-block;
-  font-weight: normal;
-}
-
-.nav-primary nav li,.nav-primary nav>* {
-	display: inline-block
-}
-
-.nav-primary nav>* {
-	vertical-align: middle
-}
-
-.nav-primary nav li {
-	font-size: 15px;
+  .nav-primary {
+    border-bottom: 1px solid #f3f3f3;
+  	justify-content: space-between;
+  	align-items: center;
+  	padding: 0 18px;
+  	background: #fff;
+  	height: 47px;
+  	box-sizing: border-box;
+  	display: flex;
+    &>* {
+      white-space: nowrap;
+    }
+    h1 {
+      margin: 0;
+    	padding: 0;
+    	color: #00b600;
+    	width: 46px;
+    	display: inline-block;
+      font-weight: normal;
+    }
+    nav {
+      &>* {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      li {
+        display: inline-block;
+        font-size: 15px;
+      }
+    }
+  }
 }
 </style>

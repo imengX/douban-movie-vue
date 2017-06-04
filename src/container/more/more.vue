@@ -3,7 +3,7 @@
     <loading v-if="loadingFlag"/>
     <div class="more" v-if="!loadingFlag">
       <headers/>
-      <h1>{{this.$route.params.title}}</h1>
+      <h1 class="title">{{this.$route.params.title}}</h1>
       <ul class="grid">
         <li class="item" v-for="(movie, index) in moreData">
           <movieItem :detail="movie" :key="movie.id"/>
@@ -98,7 +98,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss"scoped>
 .more {
   padding-left: 2%;
   padding-right: 2%;
@@ -106,33 +106,30 @@ export default {
   max-width: 650px;
   margin: 0 auto;
   overflow-x: hidden;
-}
-
-.more h1 {
-  font-size: 24px;
-  font-weight: normal;
-  box-sizing: border-box;
-  max-width: 660px;
-  margin: 16px auto 6px auto;
-  padding-left: 4%;
-}
-
-.more .grid {
-  padding: 20px 0;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 660px;
-  overflow: hidden;
-  box-sizing: border-box;
-}
-
-.more .grid .item {
-  float: left;
-  box-sizing: border-box;
-  width: 33.33333%;
-  padding-left: 4%;
-  padding-right: 4%;
-  margin-bottom: 20px;
-  overflow: hidden;
+  .title {
+    font-size: 24px;
+    font-weight: normal;
+    box-sizing: border-box;
+    max-width: 660px;
+    margin: 16px auto 6px auto;
+    padding-left: 4%;
+  }
+  .grid {
+    padding: 20px 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 660px;
+    overflow: hidden;
+    box-sizing: border-box;
+    .item {
+      float: left;
+      box-sizing: border-box;
+      width: 33.33333%;
+      padding-left: 4%;
+      padding-right: 4%;
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+  }
 }
 </style>

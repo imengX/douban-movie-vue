@@ -7,7 +7,7 @@ import router from './router'
 import iView from 'iview'
 
 import 'iview/dist/styles/iview.css'
-import './common/css/base.css'
+import './common/scss/base.scss'
 
 Vue.use(VueLazyload)
 Vue.use(router)

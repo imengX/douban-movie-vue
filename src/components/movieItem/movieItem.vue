@@ -3,10 +3,8 @@
     <div class="item-poster" v-lazy:background-image="detail.images.large"></div>
     <span class="item-title">{{ detail.title }}</span>
     <div class="item-rating">
-      <div class="rank">
-        <star class="rating-stars" v-if="detail.rating.average" :size="24" :score="detail.rating.average"/>
-        <span v-if="!detail.rating.average">暂无评分</span>
-      </div>
+      <star class="rating-stars" v-if="detail.rating.average" :size="24" :score="detail.rating.average"/>
+      <span v-if="!detail.rating.average">暂无评分</span>
     </div>
   </router-link>
 </template>
@@ -27,18 +25,17 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .item-poster {
 	width: 100%;
 	overflow: hidden;
 	background-size: cover;
 	background-position: center;
-}
-
-.item-poster:before {
-	content: "";
-	float: left;
-	margin-top: 142.85714%;
+  &::before {
+    content: "";
+  	float: left;
+  	margin-top: 142.85714%;
+  }
 }
 
 .item-title {
@@ -48,7 +45,6 @@ export default {
 	text-overflow: ellipsis;
 	line-height: .94rem;
   max-width: 100%;
-	text-overflow: ellipsis;
 	word-wrap: normal;
   font-size: 13px;
   font-weight: normal;
@@ -63,9 +59,8 @@ export default {
 	margin-top: .2rem;
 	font-size: .72rem;
   text-align: center;
-}
-
-.rating-stars {
-  font-size: 12px;
+  .rating-stars {
+    font-size: 12px;
+  }
 }
 </style>

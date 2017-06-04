@@ -72,140 +72,106 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .card {
   max-width: 650px;
   background: #fff;
   overflow-x: hidden;
   font-size: 15px;
-}
-
-.card::-webkit-scrollbar {
-  display: none;
-}
-
-.title {
-  margin: 30px 18px 5px;
-  font-size: 24px;
-  line-height: 32px;
-  word-break: break-all;
-  font-weight: normal;
-}
-
-.info {
-  margin: 0 18px;
-  position: relative;
-  margin-bottom: 30px;
-  overflow: hidden;
-}
-
-.info .right {
-  float: right;
-}
-
-.info .right img {
-  width: 100px;
-}
-
-.info .left {
-  margin-right: 100px;
-}
-
-.info .left .rating-stars {
-  font-size: 14px;
-}
-
-.info .left .meta {
-  color: #494949;
-  margin-top: 15px;
-  padding-right: 24px;
-  font-size: 14px;
-  line-height: 1.6;
-}
-
-.intro {
-  margin: 0 18px;
-  margin-bottom: 30px;
-}
-
-.intro h2 {
-  color: #aaa;
-  margin: 0 0 15px;
-  font-size: 15px;
-  font-weight: normal;
-}
-
-.intro p {
-  line-height: 22px;
-  word-wrap: break-word;
-  margin: 0;
-  padding: 0;
-}
-
-.celebrity {
-}
-
-.celebrity h2 {
-  color: #aaa;
-  margin: 0 0 15px 18px;
-  font-size: 15px;
-  font-weight: normal;
-}
-
-.items {
-	font-size: 0;
-	white-space: nowrap;
-	overflow-x: auto;
-	-webkit-overflow-scrolling: touch;
-}
-
-.items::-webkit-scrollbar {
-  display: none;
-}
-
-.item {
-  display: inline-block;
-	vertical-align: top;
-	width: 100px;
-	text-align: center;
-  margin-left: 0.48rem;
-}
-
-.item:first-child {
-	margin-left: 1.12rem
-}
-
-.item:last-child {
-	margin-right: 1.12rem
-}
-
-.item-poster {
-	width: 100px;
-  height: 142px;
-	overflow: hidden;
-	background-size: cover;
-	background-position: center;
-}
-
-.item-poster:before {
-	content: "";
-	float: left;
-	margin-top: 142.85714%;
-}
-
-.item-title {
-	display: block;
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-	line-height: .94rem;
-  max-width: 100%;
-	text-overflow: ellipsis;
-	word-wrap: normal;
-  font-size: 13px;
-  font-weight: normal;
-  padding: 8px 0 5px;
-  color: #494949;
-  text-align: center;
+  .title {
+    margin: 30px 18px 5px;
+    font-size: 24px;
+    line-height: 32px;
+    word-break: break-all;
+    font-weight: normal;
+  }
+  .info {
+    margin: 0 18px;
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+    .right {
+      float: right;
+      img {
+        width: 100px;
+      }
+    }
+    .left {
+      margin-right: 100px;
+      .rating-stars {
+        font-size: 14px;
+      }
+      .meta {
+        color: #494949;
+        margin-top: 15px;
+        padding-right: 24px;
+        font-size: 14px;
+        line-height: 1.6;
+      }
+    }
+  }
+  .intro {
+    margin: 0 18px 30px 18px;
+    h2 {
+      color: #aaa;
+      margin: 0 0 15px;
+      font-size: 15px;
+      font-weight: normal;
+    }
+    p {
+      line-height: 22px;
+      word-wrap: break-word;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .celebrity {
+    h2 {
+      color: #aaa;
+      margin: 0 0 15px 18px;
+      font-size: 15px;
+      font-weight: normal;
+    }
+    .items {
+      font-size: 0;
+    	white-space: nowrap;
+    	overflow-x: auto;
+    	-webkit-overflow-scrolling: touch;
+      .item {
+        display: inline-block;
+      	vertical-align: top;
+      	width: 100px;
+      	text-align: center;
+        margin-left: 0.48rem;
+        &:first-child {
+        	margin-left: 1.12rem;
+        }
+        &:last-child {
+        	margin-right: 1.12rem;
+        }
+        .item-poster {
+        	width: 100px;
+          height: 142px;
+        	overflow: hidden;
+        	background-size: cover;
+        	background-position: center;
+        }
+        .item-title {
+        	display: block;
+        	overflow: hidden;
+        	white-space: nowrap;
+        	text-overflow: ellipsis;
+        	line-height: .94rem;
+          max-width: 100%;
+        	word-wrap: normal;
+          font-size: 13px;
+          font-weight: normal;
+          padding: 8px 0 5px;
+          color: #494949;
+          text-align: center;
+        }
+      }
+    }
+  }
 }
 </style>

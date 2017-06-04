@@ -47,7 +47,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../../common/css/mixin.scss";
+@import "../../common/scss/mixin.scss";
 
 .star {
   font-size: 0;

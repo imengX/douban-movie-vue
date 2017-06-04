@@ -18,16 +18,24 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .loading {
   position: relative;
-}
-
-.spinIconLoad {
-  animation: aniSpin 1s linear infinite;
-  color: #00b600;
-  position: relative;
-  top: 330px;
+  .prompt {
+    font-size: 1.4rem;
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    color: #00b600;
+  }
+  .spinIconLoad {
+    animation: aniSpin 1s linear infinite;
+    color: #00b600;
+    position: relative;
+    top: 330px;
+  }
 }
 
 @keyframes aniSpin {
@@ -40,15 +48,5 @@ export default {
   to {
     transform: rotate(360deg);
   }
-}
-
-.prompt {
-  font-size: 1.4rem;
-  position: fixed;
-  top: 35%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  color: #00b600;
 }
 </style>
