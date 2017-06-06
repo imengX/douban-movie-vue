@@ -10,10 +10,10 @@
 </template>
 
 <script>
-import headers from '../../components/header/header.vue'
-import footers from '../../components/footer/footer.vue'
-import movieInfo from '../../components/movieInfo/movieInfo.vue'
-import loading from '../../components/loading/loading.vue'
+import headers from '../../components/header/header'
+import footers from '../../components/footer/footer'
+import movieInfo from '../../components/movieInfo/movieInfo'
+import loading from '../../components/loading/loading'
 
 import { subject } from '../../router/server'
 

@@ -24,10 +24,10 @@
 </template>
 
 <script>
-import headers from '../../components/header/header.vue'
-import footers from '../../components/footer/footer.vue'
-import movieItem from '../../components/movieItem/movieItem.vue'
-import loading from '../../components/loading/loading.vue'
+import headers from '../../components/header/header'
+import footers from '../../components/footer/footer'
+import movieItem from '../../components/movieItem/movieItem'
+import loading from '../../components/loading/loading'
 
 import {hotMovie, commingSoon, top250} from '../../router/server'
 
